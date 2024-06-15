@@ -58,7 +58,6 @@ import org.bukkit.event.entity.ExplosionPrimeEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.entity.HorseJumpEvent;
 import org.bukkit.event.entity.PigZapEvent;
-import org.bukkit.event.entity.PiglinBarterEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
 import org.bukkit.event.entity.SheepRegrowWoolEvent;
@@ -228,11 +227,7 @@ public class SimpleEvents {
 		Skript.registerEvent("Tnt Prime", SimpleEvent.class, TNTPrimeEvent.class, "tnt prime")
 				.description("Called when tnt specifically is primed in any way, cancel to stop the priming")
 				.examples("on tnt prime:")
-				.since(2.9.0);
-		Skript.registerEvent("Piglin Barter", SimpleEvent.class, PiglinBarterEvent.class, "[piglin] barter")
-				.description("Called when a piglin finishes trading a piece of gold for another item")
-				.examples("on piglin barter:")
-				.since(2.9.0);
+				.since("VERSION");
 		Skript.registerEvent("Hunger Meter Change", SimpleEvent.class, FoodLevelChangeEvent.class, "(food|hunger) (level|met(er|re)|bar) chang(e|ing)")
 				.description("Called when the hunger bar of a player changes, i.e. either increases by eating or decreases over time.")
 				.examples("on food bar change:")
